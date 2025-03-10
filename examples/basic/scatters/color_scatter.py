@@ -25,4 +25,9 @@ p.circle(x, y, radius=radii,
          fill_color=colors, fill_alpha=0.6,
          line_color=None)
 
+from typing import assert_type
+#reveal_type(p.xaxis.axis_line_width)
+assert_type(p.xaxis.axis_line_width, float)
+
+
 show(p)
